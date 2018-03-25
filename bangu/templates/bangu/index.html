@@ -1,0 +1,20 @@
+{% extends 'bangu/base.html' %}
+{% load static %}
+{% block content%}
+<div class="form-group">
+    
+    <form class="form-signin" action="/result/" method="POST">
+    	<h3 style="color: #fff" class="form-signin-heading"><b style="color: #fff">বাঙালী বাঙালী <i class="em em-flag-bd"></i></b><br>Write your heart out!</h3>
+        {% csrf_token %}
+    <label for="comment" style="color: #fff">Insert your text here:</label>
+    <textarea class="form-control" rows="5" name="text"></textarea>
+    <br>
+    <button type="submit" class="btn btn-primary ">Submit</button>
+    </form>
+    </div> 
+    <div class="container">
+
+</div>   
+
+
+{% endblock %} 
